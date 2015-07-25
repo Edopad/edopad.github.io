@@ -20,9 +20,17 @@ body {
 }
 
 #body {
-  
+  width: 100%;
+  margin: 0px;
+  padding: 4px;
+  background-color: #FFFFFF;
 }
 
 #footer {
-  
+  height: 17px;
+  width: 100%;
+  margin: 0px;
+  padding: 4px;
+  background-color: #999999;
+  font-weight: bold;
 }
