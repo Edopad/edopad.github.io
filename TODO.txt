@@ -1,0 +1,3 @@
+( ):Add support for -webkit-, -moz-, -o-, and -ms- prefixes for background
+(*):Add pause button for background animation
+( ):Create and implement favicon and shortcut icon(s)
