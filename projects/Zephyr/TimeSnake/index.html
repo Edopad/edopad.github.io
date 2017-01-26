@@ -123,8 +123,7 @@ function frame() {
     //Continue normally with game
     var sll = statelist.length - 1;
     var g = deepcopy(statelist[sll]);
-    statelist[sll+1] = g;
-    g.doframe(0);
+    if(g.doframe(0)) statelist[sll+1] = g;
     g.render();
   }
 }
@@ -140,9 +139,14 @@ class Game {
     this.body = [new Point(0,0)];
     this.heading = new Point(0,0);
     this.apple = new Point(5,5);
+    
+    this.dead = false;
   }
   
   doframe(alpha) {
+  
+    if(this.dead) return false;
+  
     //Ignore for now
     this.delta = alpha - this.alpha;
     this.alpha = alpha;
@@ -153,7 +157,7 @@ class Game {
     //check if eats apple
     if(body[0].equals(this.apple)) {
       //increase snake length
-      body.length++;
+      body.length+= 5;
       //respawn apple (needs work to fix collisions)
       this.apple = new Point(Math.floor(Math.random() * 21), Math.floor(Math.random() * 21));
     }
@@ -164,6 +168,16 @@ class Game {
     //move snake body forward by moving
     body.unshift(body[0].add(this.heading));
     body.length--;
+    
+    var head = body[0];
+    if(head.x < 0 || head.y < 0 || head.x >= 21 || head.y >= 21) {
+      this.dead = true;
+    }
+    for(x in body) {
+      if(x != 0 && head.equals(body[x])) this.dead = true;
+    }
+    
+    return true;
   }
   //render the game to canvas
   render() {
@@ -171,8 +185,11 @@ class Game {
     ctx.clearRect(0,0,can.width,can.height);
     //draw all body sections
     var body = this.body;
+    
+    var bcolor = this.dead?"#CC3333":"#FFFFFF";
+    
     for(var x in body) {
-      drawBox(body[x].x, body[x].y, '#FFFFFF');
+      drawBox(body[x].x, body[x].y, bcolor);
     }
     //draw apple
     drawBox(this.apple.x, this.apple.y, '#CC3333');
