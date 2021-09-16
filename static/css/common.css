@@ -63,6 +63,7 @@ body {
 #navbar {
   display: block;
   list-style-type: none;
+  transform-origin: 0 0;
   transform: translateZ(0px);
   /*z-index: 1;*/
   position: relative;
