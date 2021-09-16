@@ -1,0 +1,38 @@
+#project_showcase {
+  
+}
+.social_img_small {
+  width: 2em;
+  height: 2em;
+}
+
+#title_postcard {
+  width: 100%;
+  position: relative;
+  border: 0.15em solid black;
+  border-radius: 1em;
+  box-sizing: border-box;
+  /*overflow: hidden;*/
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  /*align-items: stretch;*/
+}
+
+#headshot {
+  width: 14em;
+  height: 18.5em;
+  max-width: 90%;
+  flex: 0 1 auto;
+  /*border: 0.1em solid black;*/
+  background-image: url('../img/portrait_small.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  box-sizing: border-box;
+}
+
+#postcard_right {
+  flex-shrink: 2;
+  flex: 1 1 30em;
+  text-align: center;
+}

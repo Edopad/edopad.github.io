@@ -1,0 +1,76 @@
+Website cross-browser support
+
+Useful tool: https://stackedit.io/app#
+
+Initially determined and obtained from: https://caniuse.com/?search=Element.insertAdjacentHTML()
+
+Major browsers considered:
+	Desktop
+		* Mozilla Firefox [v28+: 3.25%]
+		* Google Chrome [v29+: 25.79%]
+		* Apple Safari [v9+: 3.91%]
+			? Safari [v14.1: 2.59%]
+		* Microsoft Edge [v12+: 3.96%]
+		* Microsoft Internet Explorer [v11: 0.75%]
+	Mobile
+		* Chrome for Android [v93=: 39.63%] (???)
+		* Safari on iOS [v9+: 14.09%]
+		* Samsung Internet [v13.0+: 3.11%]
+			- [v14.0+: 2.26%]
+Total global usage support: 97.08%
+
+css calc as value: full support for all above browsers
+note that opera mini (1.15%) does not support this at all
+
+| Browser          | Version | % Users |
+| :--------------- | :-----: | ------: |
+| IE               | 11      |   0.00% |
+| Edge             | 17+     |   3.96% |
+| Firefox          | 61+     |   3.25% |
+| Chrome (desktop) | 62+     |  25.79% |
+| Safari (desktop) | 11+     |   3.91% |
+| Chrome (Android) | [93]    |  39.63% |
+| Safari (iOS)     | 11+     |  14.09% |
+| Samsung Internet | 8.2+    |   3.11% |
+| Total            |         |  93.74% |
+Note: Total becomes 94.49% if IE11 is included.
+
+[calc() as CSS unit value](https://caniuse.com/?search=calc()%20as%20CSS%20unit%20value)
+[CSS property: font-weight: <number> syntax](https://caniuse.com/?search=CSS%20property%3A%20font-weight%3A%20%3Cnumber%3E%20syntax)
+| Browser          | Version |
+| :--------------- | :-----: |
+| IE               | no      |
+| Edge             | 17+     |
+| Firefox          | 61+     |
+| Chrome           | 62+     |
+| Safari           | 11+     |
+| Chrome (Android) | yes     |
+| Safari (iOS)     | 11+     |
+| Samsung Internet | 8.2+    |
+
+[CSS Flexible Box Layout Module](https://caniuse.com/?search=CSS%20Flexible%20Box%20Layout%20Module)
+| Browser          | Version |
+| :--------------- | :-----: |
+| IE               | 11,bugs |
+| Edge             | 12+     |
+| Firefox          | 28+     |
+| Chrome           | 29+     |
+| Safari           | 9+      |
+| Chrome (Android) | yes     |
+| Safari (iOS)     | 11+     |
+| Samsung Internet | 4+      |
+
+[gap property for Flexbox](https://caniuse.com/?search=gap%20property%20for%20Flexbox)
+Apr 25,2021 (???)
+| Browser          | Version | % Users |
+| :--------------- | :-----: | ------: |
+| IE               | none    |   0.00% |
+| Edge             | 84+     |   3.55% |
+| Firefox          | 63+     |   2.94% |
+| Chrome           | 84+     |  24.14% |
+| Safari           | 14.1    |   2.59% |
+| Chrome (Android) | yes     |  39.63% |
+| Safari (iOS)     | 14.5+   |  10.82% |
+| Samsung Internet | 14.0    |   2.26% |
+| Total            |         |  85.93% |
+
