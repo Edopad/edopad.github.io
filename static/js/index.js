@@ -12,7 +12,7 @@ function update_parallax() {
 
 function page_load() {
   window.requestAnimationFrame(update_parallax);
-  //window.setInterval(update_parallax, 1000/60);
+  window.setInterval(update_parallax, 10);
 }
 
 /*Util functions*/

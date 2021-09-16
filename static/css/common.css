@@ -91,6 +91,9 @@ body {
   font-weight: 300;
   background-color: rgba(0,0,0,0.3);
 }
+.nav_active_page {
+  background-color: rgba(0,0,0,0.3);
+}
 #navbar > li > a {
   color: white;
   text-decoration: none;
