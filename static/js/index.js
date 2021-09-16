@@ -5,11 +5,12 @@ function update_parallax() {
   /*
   var pce = document.getElementById('headshot');
   pce.style.marginTop = 'calc(-' + scrolly/4 + 'px - 11em)';*/
-  window.requestAnimationFrame(update_parallax);
+  //window.requestAnimationFrame(update_parallax);
 }
 
 function page_load() {
   window.requestAnimationFrame(update_parallax);
+  window.setInterval(update_parallax, 10);
 }
 
 /*Util functions*/
