@@ -1,18 +1,17 @@
+var bge = document.getElementById('top_pane_bg');
 function update_parallax() {
-  var bge = document.getElementById('top_pane_bg');
   var scrolly = window.scrollY;
-  //bge.style.top = ''+scrolly/2+'px';
-
   /*
   var pce = document.getElementById('headshot');
   pce.style.marginTop = 'calc(-' + scrolly/4 + 'px - 11em)';*/
-  bge.style.transform = 'translateY('+scrolly/3+'px)';
+  bge.style.transform = 'translateY('+Math.round(scrolly/3)+'px)';
   window.requestAnimationFrame(update_parallax);
 }
 
 function page_load() {
+  bge = document.getElementById('top_pane_bg');
   window.requestAnimationFrame(update_parallax);
-  window.setInterval(update_parallax, 10);
+  //window.setInterval(update_parallax, 10);
 }
 
 /*Util functions*/
