@@ -6,7 +6,7 @@ function update_parallax() {
   /*
   var pce = document.getElementById('headshot');
   pce.style.marginTop = 'calc(-' + scrolly/4 + 'px - 11em)';*/
-  bge.style.transform = 'translateY(-'+scrolly/2+'px)';
+  bge.style.transform = 'translateY('+scrolly/3+'px)';
   window.requestAnimationFrame(update_parallax);
 }
 

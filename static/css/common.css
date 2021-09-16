@@ -58,7 +58,7 @@ body {
   background-position: 50% 70%;
   z-index: 0;
   transform-origin: 0 0;
-  transform: translateZ(0px);
+  transform: translateZ(-1px);
 }
 #navbar {
   display: block;
