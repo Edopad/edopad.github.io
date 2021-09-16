@@ -3,25 +3,18 @@ html {
   padding: 0;
   width: 100%;
   height: 100%;
-  /*background: linear-gradient(0deg, rgba(0,70,193,1) 0%, rgba(0,153,255,1) 100%);
-  background-image: url("https://live.staticflickr.com/4294/35092193734_db5ebd2f9e_b.jpg");
-  background-image: url("file:///C:/Users/mgrant/Desktop/Michael's%20Phone%20Backup%20(July%209,%202020)/Phone/Pictures/AdobeLightroom/LRM_EXPORT_20180722_143034.jpg");
-  background-size: cover;*/
 }
 #page_background {
   position: fixed;
   z-index: -1;
   width: 100%;
   height: 100%;
-  /*background: linear-gradient(0deg, rgba(0,70,193,1) 0%, rgba(0,153,255,1) 100%);*/
-  /*background-image: url("https://live.staticflickr.com/4294/35092193734_db5ebd2f9e_b.jpg");*/
   background-color: #ccc;
   background-image: url("../img/mauiwater_1080.jpg");/**/
   background-size: cover;
 }
 body {
   width: 100%;
-  /*height: 100%;*/
   min-height: 100%;
   margin: 0;
   font-family: Verdana, Geneva, sans-serif;
@@ -37,7 +30,6 @@ body {
   margin-right: auto;
   background-color: #fff;
   box-shadow: 0 0 1em 0 #000;
-  /*background-color: rgba(255,255,255,0.9);*/
 }
 #copyright_footer {
   width: 100%;
@@ -50,17 +42,24 @@ body {
 #top_pane {
   position: relative;
   background-color: #ddd;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+#top_pane_bg {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 120%;
   background-image: url("../img/transamerica_1080_crop.jpg");
   background-size: cover;
   background-position: 50% 70%;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
+  z-index: 0;
 }
 #navbar {
   display: block;
   list-style-type: none;
-  /*position: absolute;
-  top: 0;*/
+  z-index: 1;
+  position: relative;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -71,9 +70,7 @@ body {
 #navbar > li {
   display: inline-block;
   width: 20%;
-  /*height: 1.5em;*/
   margin: 0;
-  /*min-width: 8em;*/
   max-width: 11em;
   box-sizing: border-box;
   text-align: center;
@@ -83,9 +80,6 @@ body {
     display: block;
     max-width: 100%;
     width: 100%;
-  }
-  #top_pane_bg {
-    height: 18em;
   }
 }
 #navbar > li:hover {
